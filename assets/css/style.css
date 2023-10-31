@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://i.imgur.com/mlsroVp.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.wrapper:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.btn {
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+.btn:hover {
+    background-color: white;
+    color: rgb(43, 43, 43);
+}
+
+
+@media (max-width: 992px) {
+    .wrapper {
+        padding: 25px;
+    }
+}
+
